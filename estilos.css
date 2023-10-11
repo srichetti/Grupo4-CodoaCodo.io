@@ -1,0 +1,468 @@
+header{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: red;
+    background-color: yellow;
+    padding: 1em;
+}
+
+.titulo-introduccion{
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+    border: 1em green;
+    background-color: lightblue;
+    padding: 0.5em;
+    margin-left: 2em;
+    text-align: center;
+}
+.titulo{
+    border: 1em solid red;
+    font-family: 'Avenir Next LT Pro';
+    font-weight: bold;
+    border: 2rem #00A4BD;   
+    color: #2D3E50;
+    background-color: #EAF0F6;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    background-color: black;
+    padding: 1em;
+}
+h1{
+    display: block;
+    border-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(232, 11, 11);
+    background-color: yellow;
+    padding: 1em {12,1,4,3};
+    /* padding: 1em;{12,1,4,3}; */
+    /* margin-left: 2em; */
+}
+h2{
+    display: block;
+    color: solid red;
+    font-family: Arial, Helvetica, sans-serif;
+    color: yellowgreen;
+    background-color: blue;
+    padding: 1em;{12,1,4,3};
+    /* margin-left: 2em; */
+}
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: black;
+    padding: 0.5em;
+    margin-left: 2em;
+}
+.spain{
+    font-size: 1.3em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    -webkit-text-stroke: px white;
+    color: yellow;
+    background-color: red;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuQk_qZrPQthD2RkF6gOcKwidcBHmZYOCoqw&usqp=CAU);
+    background-size: 150%;
+    background-repeat: no-repeat;
+    padding: 2em;
+    margin-left: 3em;
+}
+.patagonia{
+    font-size: 1.3em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    -webkit-text-stroke: 1px white;
+    color: yellow;
+    background-color: red;
+    background-image: url(https://wallpapers.com/images/hd/patagonia-long-road-wu4e62i3785tduwf.jpg);
+    background-size: 150%;
+    background-repeat: no-repeat;
+    padding: 2em;
+    margin-left: 2em;
+}
+.caribe{
+    font-size: 1.3em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    -webkit-text-stroke: 1px white;
+    color: yellow;
+    background-color: red;
+    background-image: url(https://static6.depositphotos.com/1009043/591/i/450/depositphotos_5917282-stock-photo-bottom-bay-barbados-caribbean.jpg);
+    background-size: 150%;
+    background-repeat: no-repeat;
+    padding: 2em;
+    margin-left: 2em;
+}
+
+
+/*Comienza Carussel*/
+.main-carousel-data {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.main-carousel-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.main-carousel-inner h3 {
+  font-size: 1.75rem;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.main-carousel-inner p {
+  text-align: right;
+  color: #ffffff;
+  max-width: 55%;
+  line-height: 1.5;
+}
+
+.main-carousel-inner__button-group {
+  display: flex;
+  column-gap: 0.5rem;
+}
+
+.main-carousel-inner__button-group a {
+  display: block;
+  width: fit-content;
+  font-size: 1rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  transition: all 0.1s ease-in-out;
+}
+
+.main-carousel-inner__button-group a.button--outline {
+  color: #ffffff;
+  border: solid 1px #ffffff;
+}
+
+.main-carousel-inner__button-group a.button--outline:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.main-carousel-inner__button-group a.button--primary {
+  color: #ffffff;
+  background-color: #2aa343;
+}
+
+.main-carousel-inner__button-group a.button--primary:hover {
+  background-color: #16461d;
+}
+
+@media (max-width: 685px) {
+  .main-carousel-inner p {
+    max-width: 100%;
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 440px) {
+  .main-carousel-inner h3 {
+    font-size: 1.5rem;
+  }
+
+  .main-carousel-inner p {
+    max-width: 100%;
+    font-size: 0.75rem;
+  }
+
+  .main-carousel-inner__button-group a {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 390px) {
+  .main-carousel-inner h3 {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .main-header__logo-container img {
+    width: 8rem;
+  }
+}
+
+/*Comienza 3 imagenes*/
+.fw-bold {
+  font-weight: 700 !important;
+}
+
+.fs-1 {
+  font-size: calc(1.375rem + 1.5vw) !important;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.column {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* Aliniamos los elementos a la izquierda */
+  margin-bottom: 20px;
+  padding: 0;
+  /* Quitamos el espacio interno de la columna */
+  border: 1px solid #ccc;
+  /* Agregamos un borde a la columna */
+  border-radius: 10px;
+  /* Agregamos bordes redondeados */
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  /* Agregamos sombra */
+  overflow: hidden;
+  /* Ocultamos cualquier contenido que desborde la columna */
+}
+
+
+
+h5 {
+  margin-top: 10px;
+  font-size: 24px;
+  margin-left: 10px;
+  text-align: left;
+  /* Alinear el título a la izquierda */
+}
+
+
+.button1 {
+  padding: 10px 20px;
+  background-color: orange;
+  color: #272425;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  margin-left: 10px;
+}
+
+.button2 {
+  padding: 10px 20px;
+  background-color: #17a2b9;
+  color: white;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  margin-left: 10px;
+}
+
+.button1-ada {
+  padding: 10px 20px;
+  background-color: #6c757c;
+  color: white;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  margin-left: 10px;
+}
+
+.button2-ada {
+  padding: 10px 20px;
+  background-color: #db3643;
+  color: white;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  margin-left: 10px;
+}
+
+
+
+/*Comienza parte Hawaii*/
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1000px;
+}
+
+.column-hw {
+  flex: 50%;
+  margin-right: 0px;
+  margin-right: -12px;
+}
+
+
+.column-hw img {
+  width: 100%;
+  height: 100%;
+}
+
+div.column:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-hw {
+  margin: auto;
+  text-align: left;
+  color: white;
+  margin-top: 20px;
+}
+
+
+/* h2 { */
+  /* font-size: 24px; */
+  /* margin-bottom: 10px; */
+  /* margin-left: 10px; */
+/* } */
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+
+.transparent-button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: transparent;
+  /* Cambiado */
+  color: white;
+  border: 2px solid white;
+  /* Añadido */
+  border-radius: 0.375rem;
+  /* Añadido */
+  cursor: pointer;
+  margin-left: 12px;
+}
+
+.transparent-button:hover {
+  background-color: white;
+  /* Cambiado */
+  color: #353a40;
+  /* Añadido */
+}
+
+
+.col-r {
+  background-color: #353a40;
+  margin: 0%;
+}
+
+/*Parte del medio*/
+.text-center {
+  text-align: center !important;
+}
+
+.text-modif {
+  margin-top: 30px;
+  text-align: center;
+}
+
+/*Comienzo del Formulario*/
+
+form {
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+  /* Centramos los elementos dentro del formulario */
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 0.5em;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+  height: 8em;
+}
+
+input[type="submit"] {
+  display: block;
+  margin: 1em auto;
+  padding: 0.5em;
+  border-radius: 4px;
+  border: none;
+  background-color: #96c93e;
+  color: #fff;
+  cursor: pointer;
+  width: 100%;
+}
+
+input[type="submit"]:hover {
+  background-color: #0062cc;
+}
+
+.nombre-apellido {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
+  width: 100%;
+
+}
+
+#nombre {
+  margin-right: 0.5em;
+}
+
+#apellido {
+  margin-left: 0.5em;
+}
+
+.form-text {
+  margin-top: 0.25rem;
+  font-size: .875em;
+  text-align: left;
+  margin-left: 0;
+}
+
+
+/*Comienza el Footer*/
+footer {
+  background-color: yellow;
+  padding: 20px 0;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-section {
+  margin: 0 10px;
+  /* Reduce el margen lateral de las secciones */
+  text-align: center;
+  color: white;
+}
+
+.footer-section h3 {
+  margin: 0;
+}
+
+.pre-foot {
+  padding: 1.5rem !important;
+}
