@@ -12,7 +12,7 @@ header{
     background-color: lightblue;
     padding: 0.5em;
     margin-left: 2em;
-    text-align: center;
+    text-align: left;
 }
 .titulo{
     border: 1em solid red;
@@ -30,7 +30,7 @@ header{
 h1{
     display: block;
     border-color: black;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: rgb(232, 11, 11);
     background-color: yellow;
     padding: 1em {12,1,4,3};
@@ -50,21 +50,38 @@ h3{
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     background-color: black;
-    padding: 0.5em;
-    margin-left: 2em;
+    padding: 1em;
+    margin-left: 4em;
 }
+h5 {
+  margin-top: 10px;
+  font-size: 24px;
+  margin-left: 10px;
+  text-align: left;
+  /* Alinear el título a la izquierda */
+}
+
+.image-container {
+  border: 2px solid #ccc; /* Add a border to the container */
+  margin: 60px; /* Add margin around the container */
+  padding: 60px; /* Add padding inside the container */
+}
+
 .spain{
+    background-position: left top; /*Ajusta la posición de la imagen al borde izquierdo superior */
+    text-align: left; 
+    background-size: 100% auto; /* Reducir el tamaño horizontal de la imagen de fondo al 50% */
     font-size: 1.3em;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    -webkit-text-stroke: px white;
+    -webkit-text-stroke: 1px white;
     color: yellow;
     background-color: red;
     background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuQk_qZrPQthD2RkF6gOcKwidcBHmZYOCoqw&usqp=CAU);
-    background-size: 150%;
+    background-size: 180%;
     background-repeat: no-repeat;
-    padding: 2em;
-    margin-left: 3em;
+    padding: 3%;
 }
+
 .patagonia{
     font-size: 1.3em;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -219,17 +236,6 @@ h3{
   /* Ocultamos cualquier contenido que desborde la columna */
 }
 
-
-
-h5 {
-  margin-top: 10px;
-  font-size: 24px;
-  margin-left: 10px;
-  text-align: left;
-  /* Alinear el título a la izquierda */
-}
-
-
 .button1 {
   padding: 10px 20px;
   background-color: orange;
@@ -290,8 +296,6 @@ h5 {
   margin-left: 10px;
 }
 
-
-
 /*Comienza parte Hawaii*/
 .row {
   display: flex;
@@ -322,13 +326,6 @@ div.column:nth-child(2) {
   color: white;
   margin-top: 20px;
 }
-
-
-/* h2 { */
-  /* font-size: 24px; */
-  /* margin-bottom: 10px; */
-  /* margin-left: 10px; */
-/* } */
 
 p {
   font-size: 18px;
@@ -419,7 +416,6 @@ input[type="submit"]:hover {
   justify-content: space-between;
   margin-bottom: 1em;
   width: 100%;
-
 }
 
 #nombre {
