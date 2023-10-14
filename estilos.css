@@ -77,23 +77,23 @@ h5 {
   /* Alinear el título a la izquierda */
 }
 
-.image-container {
-  border: 2px solid #ccc; /* Add a border to the container */
-  margin: 60px; /* Add margin around the container */
-  padding: 60px; /* Add padding inside the container */
+
+.image-container img {
+  max-width: 45%; /* Hace que las imágenes se ajusten al ancho del contenedor */
+  height: auto; /* Mantiene la proporción original de la imagen */  
 }
 
-.spain{
-    background-position: left top; /*Ajusta la posición de la imagen al borde izquierdo superior */
+.spain {
+    background-position: left top; /* Ajusta la posición de la imagen al borde izquierdo superior */
     text-align: left; 
-    background-size: 100% auto; /* Reducir el tamaño horizontal de la imagen de fondo al 50% */
+    /* background-size: 100% auto;  /* Reducir el tamaño horizontal de la imagen de fondo al 50% */
     font-size: 1.3em;
     font-family: Georgia, 'Times New Roman', Times, serif;
     -webkit-text-stroke: 1px white;
     color: yellow;
     background-color: red;
     background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuQk_qZrPQthD2RkF6gOcKwidcBHmZYOCoqw&usqp=CAU);
-    background-size: 180%;
+    background-size: 200%; 
     background-repeat: no-repeat;
     padding: 3%;
 }
