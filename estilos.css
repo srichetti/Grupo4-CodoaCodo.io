@@ -2,7 +2,7 @@ header{
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: red;
     background-color: yellow;
-    padding: 1em;
+    padding: 0.3em;
 }
 
 .titulo-introduccion{
@@ -27,6 +27,23 @@ header{
     background-color: black;
     padding: 1em;
 }
+
+menu,
+ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  width: 400px;
+}
+
+li {
+  flex-grow: 1;
+}
+
+button {
+  width: 100%;
+}
+
 h1{
     display: block;
     border-color: black;
@@ -34,9 +51,8 @@ h1{
     color: rgb(232, 11, 11);
     background-color: yellow;
     padding: 1em {12,1,4,3};
-    /* padding: 1em;{12,1,4,3}; */
-    /* margin-left: 2em; */
 }
+
 h2{
     display: block;
     color: solid red;

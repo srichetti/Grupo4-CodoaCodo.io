@@ -1,17 +1,24 @@
-/* Reset some default styles */
-body, h1, h2, ul, li, p, form {
+body, h2, p, form {
   width: 90%;
+  viewport-length
+  ;
   max-width: 2800px;
   margin: 0 aut
   padding: 0;
 }
-header{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: red;
-    background-color: yellow;
-    padding: 1em;
+menu,
+ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  width: 400px;
 }
-
+li {
+  flex-grow: 1;
+}
+button {
+  width: 100%;
+}
 h1{
     display: block;
     border-color: black;
@@ -21,7 +28,6 @@ h1{
     padding: 1em;
     margin-left: 2em;
 }
-
 /* Style the header and navigation */
 header {
     background-color: #333;
@@ -45,12 +51,12 @@ nav a {
     font-weight: bold;
 }
 
-/* Style the carousel */
+/* Style carousel */
 .carousel {
-    max-width: 55%; /* Resize the carousel to 50% of the viewport width */
+    max-width: 55%; /* Resize carousel */
     overflow: hidden;
-    margin: 0 auto; /* Center the carousel horizontally */
-    position: relative; /* Add relative positioning for button placement */
+    margin: 0 auto; /* Centro para carousel - horizontal */
+    position: relative; 
 }
 
 .carousel img {
@@ -58,22 +64,19 @@ nav a {
     height: auto;
     display: none;
 }
-/* Set the text color to #F50c0c */ 
-
-/* Style the next and previous buttons */
 .carousel-button {
-    position: absolute;
+    position: relative; /*absolute*/
     top: 50%;
     transform: translateY(-50%);
     background-color: transparent; /* Remove the background */
-    color: #F50c0c; 
+    color: black; 
     padding: 10px 20px;
     border: none;
     cursor: pointer;
 }
 
 .carousel-button:hover {
-    color: #F50c0c; /* Change the text color on hover to a slightly different cyan */
+    color: black); /* Change the text color on hover to a slightly different cyan */
 }
 
 .next-button {
