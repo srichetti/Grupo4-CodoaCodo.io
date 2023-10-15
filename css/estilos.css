@@ -4,30 +4,6 @@ header{
     background-color: yellow;
     padding: 0.3em;
 }
-
-.titulo-introduccion{
-    font-family: Arial, Helvetica, sans-serif;
-    color: red;
-    border: 1em green;
-    background-color: lightblue;
-    padding: 0.5em;
-    margin-left: 2em;
-    text-align: left;
-}
-.titulo{
-    border: 1em solid red;
-    font-family: 'Avenir Next LT Pro';
-    font-weight: bold;
-    border: 2rem #00A4BD;   
-    color: #2D3E50;
-    background-color: #EAF0F6;
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: white;
-    background-color: black;
-    padding: 1em;
-}
-
 menu,
 ul {
   display: flex;
@@ -77,6 +53,46 @@ h5 {
   /* Alinear el título a la izquierda */
 }
 
+img {
+  max-width: 100%;
+  height: 100%;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+p1 {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+/* Estilos para las columnas de destinos Index.html */
+.destinos-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+
+.destino-column {
+  flex: 1;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+/* Estilo para el espacio entre las columnas */
+.spacer {
+  flex-basis: 10px; /* Ancho de la columna separadora */
+  background-color: transparent; /* Puedes establecer un color de fondo a tu elección */
+}
+
+/* Estilos para las columnas de Paginas destinos */
+
 .image-container {
   display: flex;
   justify-content: space-between;
@@ -87,9 +103,40 @@ h5 {
   margin: 5px; /* Espacio entre las columnas */
 }
 
-img {
-  max-width: 100%;
-  height: 100%;
+.titulo-introduccion{
+  font-family: Arial, Helvetica, sans-serif;
+  color: red;
+  border: 1em green;
+  background-color: lightblue;
+  padding: 0.5em;
+  margin-left: 2em;
+  text-align: left;
+}
+.titulo{
+  border: 1em solid red;
+  font-family: 'Avenir Next LT Pro';
+  font-weight: bold;
+  border: 2rem #00A4BD;   
+  color: #2D3E50;
+  background-color: #EAF0F6;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  background-color: black;
+  padding: 1em;
+}
+.titulo1{
+  border: 1em solid red;
+  font-family: 'Avenir Next LT Pro';
+  font-weight: bold;
+  border: 2rem #00A4BD;   
+  color: #2D3E50;
+  background-color: #EAF0F6;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+  background-color: lightblue;
+  padding: 1em;
 }
 
 .spain {
@@ -351,14 +398,6 @@ div.column:nth-child(2) {
   color: white;
   margin-top: 20px;
 }
-
-p {
-  font-size: 18px;
-  line-height: 1.5;
-  margin-bottom: 10px;
-  margin-left: 10px;
-}
-
 
 .transparent-button {
   padding: 10px 20px;
