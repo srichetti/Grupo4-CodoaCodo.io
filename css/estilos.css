@@ -77,9 +77,9 @@ p, p1 {
 }
 
 /* Estilos para títulos */
-.titulo-introduccion, .titulo, .titulo1 {
+.titulo-introduccion, .titulo, .titulo1, .titulo2 {
   font-family: 'Avenir Next LT Pro';
-  font-weight: bold;
+  font-weight: bbold;
   padding: 1em;
   align-items: center;
   justify-content: center;
@@ -106,8 +106,13 @@ p, p1 {
   text-align: center;
 }
 
-
-/* Contenedores de destinos */
+.titulo2 {
+  border: 0,2em solid lightblue;
+  color: yellow;
+  background-color: red;
+  text-align: left;
+}
+/* Contenedores de destinos pagina INDEX*/
 .destinos-container {
   display: flex;
   align-items: center;
@@ -117,34 +122,40 @@ p, p1 {
 
 .destino-column {
   flex: 1;
-  padding: 40px;
+  padding: 60px;
   box-sizing: border-box;
   color: black;
 }
 
 .spacer {
-  flex-basis: 10px;
+  flex-basis: 5px;
   background-color: transparent;
 }
 
-/* Contenedores de imágenes */
+/* Contenedores de imágenes - Pagina de Espana */
 .image-container {
   display: flex;
   justify-content: space-between;
+  margin: 10px;
 }
-
+ 
 .column {
   flex: 1;
-  margin: 5px;
+  margin: 0 5px; /* Separación de 10 píxeles (5px a cada lado) */
 }
 
+.column-image {
+  width: 100%; /* Establece el ancho de las imágenes al 100% del contenedor */
+  height: 100%; /* Mantiene la proporción de aspecto original */
+}
 
 /* Estilos para las secciones de destinos */
 .spain, .patagonia, .caribe {
   font-family: Georgia, 'Times New Roman', Times, serif;
   -webkit-text-stroke: 1px white;
   padding: 2em;
-  margin-left: 2em;
+  text-align: left;
+  /* margin-left: 0,5em;*/
 }
 
 .spain {
@@ -169,7 +180,7 @@ p, p1 {
 }
 
 /* Comienzo del carrusel */
-.main-carousel-data {
+/* .main-carousel-data {
   position: absolute;
   left: 0;
   right: 0;
@@ -194,7 +205,7 @@ p, p1 {
   color: #ffffff;
   max-width: 55%;
   line-height: 1.5;
-}
+} */ */
 
 /* Resto de tus estilos (3 imágenes, Hawaii, Formulario, Footer) */
 /* ... */
