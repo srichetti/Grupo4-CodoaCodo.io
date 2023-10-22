@@ -1,10 +1,175 @@
-header{
+header {
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: black;
   background-color: lightgray
   /*  lemonchiffon; */
   padding: 0.3em;
 }
+
+/* Portada Index */
+@font-face {
+  font-family: "LibreFranklin";
+  src: url('../fonts/LibreFranklin-VariableFont_wght.ttf');
+}
+
+  .hero {
+    position: relative;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+.img-hero {
+    display: flex;
+    justify-content: center;
+}
+
+.desk {
+  display: block;
+}
+
+.mobile {
+  display: none;
+}
+
+/* About.html  */
+.contenedor {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px; /* Espacio a los lados */
+}
+
+.columnas {
+  display: flex;
+  width: 100%;
+}
+
+.columna50 {
+  flex: 1;
+}
+
+.justificado {
+  text-align: justify;
+}
+
+#section-1 {
+  padding: 50px 0;
+}
+
+#section-1 h6 {
+  color: #753505;
+  margin: 75px 20px 0 -120px;
+  /* margin: auto; */
+}
+
+@media (max-width: 768px) {
+  #section-1 {
+      padding: 20px 0;
+  }
+}
+
+#section-2 {
+  position: relative;
+  padding: 1px 0 50px;
+  z-index: 1;
+  background-color: #fff;
+}
+
+@media (max-width: 768px) {
+  #section-2 {
+      padding: 0 20 20px;
+  }
+}
+
+#section-7 .contenedorAncho {
+  position: absolute;
+}
+
+#section-7 {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Animacion 2 - cuadro Avion */
+.contParrafoSec7 {
+  overflow: hidden; 
+  width: 800px;
+  padding: 20px;
+  background-color: rgba(194, 245, 220, 0.8);
+  margin-left: calc(45% - 200px);
+}
+
+.contParrafoSec7 h6 {
+  animation: slideFromRight 1s ; 
+  animation-fill-mode: forwards; 
+}
+
+@keyframes slideFromRight {
+  from {
+    transform: translateX(100%); 
+  }
+  to {
+    transform: translateX(calc(80% - 630px)); 
+  }
+}
+/* FIN - Animacion 2 - cuadro Avion */
+
+.columnas {
+  display: flex;
+  justify-content: space-between;
+}
+.columna30 {
+  width: calc(30% - 20px);
+  text-align: right;
+}
+.columna50 {
+  width: calc(30% - 20px);
+  margin: 0 25px; 
+}
+.columna70 {
+  width: calc(50% - 20px);
+  
+}
+.paddingLadosAncho {
+  padding: 0 110px 110px;
+}
+
+@media (max-width: 600px) {
+  .columnas {
+      flex-flow: column;
+      z-index: 9999999;
+  }
+
+  .columna70,
+  .columna50,
+  .columna30 {
+      width: 70%;
+  }
+}
+
+/* Animacion img-1 */
+.img-1 {
+  animation: rotateOnce 2s infinite; 
+  transform-origin: center; 
+  animation-play-state: paused; 
+}
+
+@keyframes rotateOnce {
+  from {
+      transform: rotate(0deg); 
+  }
+  to {
+      transform: rotate(360deg); 
+  }
+} 
+/* FIN - Animacion img-1 */
+
+
+
+
+
 
 
 /* Estilos generales */
@@ -62,6 +227,14 @@ h5 {
   text-align: left;
 }
 
+h6 {
+  font-family: "LibreFranklin";
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 1.2;
+}
+
+
 /* Imágenes */
 img {
   max-width: 100%;
@@ -82,6 +255,22 @@ p1 {
   margin-bottom: 10px;
   margin-left: 10px;
 }
+
+p2 { 
+  text-align: justify;
+  font-family: "LibreFranklin";
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #000;
+}
+
+/* @media (max-width: 768px) {
+  p2 {
+      font-size: 24px;
+  }
+} */
+
 
 /* Estilos para títulos */
 .titulo-introduccion, .titulo, .titulo1, .titulo2, .titulo3, .titulo4 {
@@ -201,33 +390,3 @@ p1 {
   background-size: 150%;
 }
 
-/* Comienzo del carrusel */
-/* .main-carousel-data {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.main-carousel-inner {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
-
-.main-carousel-inner h3 {
-  font-size: 1.75rem;
-  font-weight: 500;
-  color: #ffffff;
-}
-
-.main-carousel-inner p {
-  text-align: right;
-  color: #ffffff;
-  max-width: 55%;
-  line-height: 1.5;
-} */ */
-
-/* Resto de tus estilos (3 imágenes, Hawaii, Formulario, Footer) */
-/* ... */
