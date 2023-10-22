@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Agencia Codotour</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,300;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <script>
+        window.addEventListener("scroll", function() {
+            var imgElement = document.querySelector(".img-1");
+            var rect = imgElement.getBoundingClientRect();
+    
+            // Verifica si la imagen está en la vista del usuario
+            if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+                imgElement.style.animationPlayState = "running"; // Reanuda la animación
+            } else {
+                imgElement.style.animationPlayState = "paused"; // Pausa la animación si no está en la vista
+            }
+        });
+    </script>
+<header>
+    <menu>
+        <li><a href="index.html"><button>Inicio</button></a></li>
+        <li><a href="#top"><button>Sobre Nosotros</button></a></li>
+        <li><a href="services.html"><button>Servicios</button></a></li>
+        <li><a href="contact.html"><button>Contacto</button></a></li>
+    </menu>
+    <h1 class="titulo">Agencia Codo a Codo Tour -  Donde tus Viajes se disfrutan Mas ! </h1>
+    <h1 class="titulo1">Conozca nuestros mejores destinos de viaje</h1>
+</header>
+    <section id="section-1">
+            <div class="contenedor">
+                <div class="columnas paddingLadosAncho">
+                    <div class="columna70">
+                        <img src="img/img-1.png" alt="" class="img-1">
+                    </div>
+                    <div class="columna30">
+                        <h6>Buscar un destino turístico implica una gran cantidad de decisiones antes y durante la experiencia a vivir.</h6>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section id="section-2">
+            <div class="contenedor">
+                  <div class="columnas">
+                        <div class="columna50">
+                            <p class="justificado">
+                                Tomarse las vacaciones anuales o aprovechar un viaje de trabajo para conocer rápidamente una ciudad significa una planificación radicalmente distinta aunque apunta a lo mismo: disfrutar del lugar, de los paisajes, de la comida y aventurarse a la desconexión de la rutina y al relax.
+                            </p>
+                        </div>
+                        <div class="columna50">
+                            <p class="justificado">
+                                Viajar para celebrar siempre fue uno de los motivos principales para hacer turismo. Los destinos más románticos son elegidos para la tradicional luna de miel, el glamour y la diversión se deben combinar para el soñado regalo por los 15 años. Un aniversario, la graduación o comenzar una etapa de viajes y descanso después de años de trabajo, todas son grandes razones para elegir cambiar de aire y salir de lo cotidiano.
+                            </p>
+                        </div>
+                  </div>
+            </div>
+    </section>
+
+    <section id="section-7">
+            <img src="img/img-6.png" alt="">
+            <div class="contenedorAncho">
+                <div class="contParrafoSec7">
+                    <h6>Viajar en avión continúa siendo una opción tentadora por su rapidez y comodidad. <br>
+                        Hoy existe un gran abanico de promociones y paquetes que incluyen variedad de servicios.</h6>
+                </div>
+            </div>
+    </section>
+
+</body>
+<footer>
+    <menu>
+        <li><a href="index.html"><button>Inicio</button></a></li>
+        <li><a href="#top"><button>Sobre Nosotros</button></a></li>
+        <li><a href="services.html"><button>Servicios</button></a></li>
+        <li><a href="contact.html"><button>Contacto</button></a></li>
+    </menu>
+</footer>
+</html>
