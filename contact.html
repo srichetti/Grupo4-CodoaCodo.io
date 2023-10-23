@@ -3,30 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Agencia Codotour</title>
+    <link rel="shortcut icon" href="img/viaje.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Agencia Codotour - Contacto</title>
 </head>
 <body>
     <menu>
         <li><a href="index.html"><button>Inicio</button></a></li>
         <li><a href="about.html"><button>Sobre Nosotros</button></a></li>
         <li><a href="services.html"><button>Servicios</button></a></li>
-        <li><a href="contact.html"><button>Contacto</button></a></li>
+        <li><a href="#top"><button>Contacto</button></a></li>
     </menu>
-    <h1 class="titulo">Agencia Codotour - Donde tus Viajes se disfrutan Mas ! </h1>
-<!-- Place the next and previous buttons outside the .carousel div -->
-<div class="carousel-container">
-    <button class="carousel-button prev-button" onclick="prevImage()">Previa</button>
-    <div class="carousel">
+    <header>
+        <h1 class="titulo">Agencia Codo a Codo Tour -  Donde tus Viajes se disfrutan Mas ! </h1>
+    </header>
+<main>
+    <div class="carousel-container">
+        <div class="carousel">
         <!-- Carousel content will be controlled by JavaScript -->
-        <img src="img/Spring.png" alt="Primavera">
-        <img src="img/Summer.png" alt="Verano">
-        <img src="img/Fall.png" alt="Otoño">
-        <img src="img/Winter.png" alt="Invierno">
+            <img src="img/Spring.png" alt="Primavera">
+            <img src="img/Summer.png" alt="Verano">
+            <img src="img/Fall.png" alt="Otoño">
+            <img src="img/Winter.png" alt="Invierno">
+        </div>
     </div>
-    <button class="carousel-button next-button" onclick="nextImage()">Siguiente</button>
-</div>
-<section class="form-section">
+        <section class="form-section">
     <h2>Dejanos tus Datos y empeza a Viajar... </h2>
     <form action="submit.php" method="post">
         <label for="name">Name:</label>
@@ -38,9 +39,18 @@
         <textarea id="message" name="message" rows="4" required></textarea>
         <button type="submit">Submit</button>
     </form>
-</section>
+    </section>
+        <script src="js/script.js"></script>
 
-<script src="js/script.js"></script>
 
+<footer>
+        <menu>
+                <li><a href="index.html"><button>Inicio</button></a></li>
+                <li><a href="about.html"><button>Sobre Nosotros</button></a></li>
+                <li><a href="services.html"><button>Servicios</button></a></li>
+                <li><a href="#top"><button>Contacto</button></a></li>
+        </menu>
+</footer>
+</main>
 </body>
 </html>
