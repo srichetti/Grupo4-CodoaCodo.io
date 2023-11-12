@@ -3,54 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/viaje.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/nuestros.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/estilos.css">
     <title>Agencia Codotour - Contacto</title>
 </head>
 <body>
-    <menu>
-        <li><a href="index.html"><button>Inicio</button></a></li>
-        <li><a href="about.html"><button>Sobre Nosotros</button></a></li>
-        <li><a href="services.html"><button>Servicios</button></a></li>
-        <li><a href="#top"><button>Contacto</button></a></li>
-    </menu>
-    <header>
-        <h1 class="titulo">Agencia Codo a Codo Tour -  Donde tus Viajes se disfrutan Mas ! </h1>
-    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="about.html">Sobre Nosotros</a></li>
+            <li><a href="services.html">Servicios</a></li>
+            <li><a href="#top">Contacto</a></li>
+        </ul>
+    </nav>
 <main>
-    <div class="carousel-container">
-        <div class="carousel">
-        <!-- Carousel content will be controlled by JavaScript -->
-            <img src="img/Spring.png" alt="Primavera">
-            <img src="img/Summer.png" alt="Verano">
-            <img src="img/Fall.png" alt="Otoño">
-            <img src="img/Winter.png" alt="Invierno">
-        </div>
-    </div>
-        <section class="form-section">
     <h2>Dejanos tus Datos y empeza a Viajar... </h2>
-    <form action="submit.php" method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+    <section id="contacto">
+    <form action="" class="formulario" id="formulario">
+    <!-- Grupo: Nombre -->
+        <div class="formulario__grupo" id="grupo__nombre">
+            <label for="nombre" class="formulario__label">Nombre</label>
+            <div class="formulario__grupo-input">
+                <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Calos Sacaan">
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">El nombre solo puede contener letras y espacios.</p>
+        </div>
+    <!-- Grupo: telefono -->
+     <div class="formulario__grupo" id="grupo__telefono">
+        <label for="telefono" class="formulario__label">Telefono</label>
+        <div class="formulario__grupo-input">
+            <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="4444 4444">
+            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+        </div>
+        <p class="formulario__input-error">El telefono solo puede contener numeros, guion y espacios.</p>
+    </div>
+    <!-- Grupo: Correo Electronico -->
+        <div class="formulario__grupo" id="grupo__correo">
+            <label for="correo" class="formulario__label">Correo Electrónico</label>
+            <div class="formulario__grupo-input">
+                <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+        </div>
+    <!-- Grupo: Comentario -->
+        <div class="formulario__grupo" id="grupo__comentario">
+            <label for="comentario" class="formulario__label">Comentario</label>
+            <div class="formulario__grupo-input">
+            <input type="text" class="formulario__input" name="comentario" placeholder="Ingrese comentario">
+            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+        </div>
+            <p class="formulario__input-error">El nombre solo puede contener letras y espacios.</p>
+        </div>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
-        <button type="submit">Submit</button>
+       <div class="formulario__mensaje" id="formulario__mensaje">
+            <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+        </div>
+
+        <div class="formulario__grupo formulario__grupo-btn-enviar">
+            <button type="submit" class="formulario__btn">Enviar</button>
+            <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+        </div>
     </form>
-    </section>
-        <script src="js/script.js"></script>
 
+    <script src="js/registro.js"></script>
+    <!-- <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script> -->
+    <script src="js/script.js"></script>
 
-<footer>
-        <menu>
-                <li><a href="index.html"><button>Inicio</button></a></li>
-                <li><a href="about.html"><button>Sobre Nosotros</button></a></li>
-                <li><a href="services.html"><button>Servicios</button></a></li>
-                <li><a href="#top"><button>Contacto</button></a></li>
-        </menu>
-</footer>
+    <br>
+    <h2>Donde estamos ? :</h2>
+    <br>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3284.209375698058!2d-58.377727!3d-34.5988667!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacb0b1afcaf%3A0x8d53a5cf4f399e9c!2zR2FsZXLDrWFzIFBhY8OtZmljbw!5e0!3m2!1ses-419!2sar!4v1699831939959!5m2!1ses-419!2sar"
+         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <br>
+    <br>
 </main>
+<footer>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="about.html">Sobre Nosotros</a></li>
+            <li><a href="services.html">Servicios</a></li>
+            <li><a href="#top">Contacto</a></li>
+        </ul>
+    </nav>
+</footer>
+        <div class="redes-sociales">
+        <h4>Redes Sociales</h4>
+        <img src="img/facebook.png" alt="facebook" width="30px">
+        <img src="img/instagram.png" alt="instagram" width="30px">
+        <img src="img/twitter.png" alt="twitter" width="30px">
+        </div>
 </body>
 </html>
