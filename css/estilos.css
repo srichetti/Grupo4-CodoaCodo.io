@@ -439,6 +439,18 @@ footer nav ul {
   text-align: center;
 }
 
+/*consumo de API */
+.usuario {
+  display: inline-block;
+  margin: 10px;
+  text-align: center;
+  border: 1px solid blue;
+  border-radius: 10px;
+  padding: 10px;
+  width: 300px;
+  background-color: lightblue;
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+}
 footer nav ul li {
   display: inline;
   margin-right: 20px;
@@ -486,7 +498,7 @@ footer nav a:hover {
 
 .formulario__input:focus {
 	border: 3px solid #0075FF;
-	outline: none;
+	outline: none;conta
 	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
 }
 
