@@ -1,7 +1,7 @@
 header {
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: black;
-  background-color: lightgray
+  background-color: lightgray;
   /*  lemonchiffon; */
   padding: 0.3em;
 }
@@ -196,13 +196,19 @@ a {
     text-decoration: none;
     color: black;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 24px;
+}
+
+a1 {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
 }
 
 
-
 /* Estilos para encabezados */
-h1, h2, h3, h5 {
+h1, h2, h3, h4, h5 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -223,6 +229,13 @@ h3 {
   background-color: black;
   padding: 1em;
   margin-left: 1em;
+}
+
+h4 {
+  font-size: 24px;
+  margin-top: 10px;
+  margin-left: 10px;
+  text-align: center;
 }
 
 h5 {
@@ -331,14 +344,14 @@ p2 {
 
 .destino-column {
   flex: 1;
-  padding: 60px;
+  padding: 20px;
   box-sizing: border-box;
   color: black;
 }
 
 .spacer {
-  flex-basis: 0,3%
-  background-color: transparent;
+  flex-basis: 0%;
+  background-color: black;
 }
 
 /* Contenedores de imágenes - Pagina de Espana */
@@ -447,7 +460,7 @@ footer nav ul {
   border: 1px solid blue;
   border-radius: 10px;
   padding: 10px;
-  width: 450px;
+  width: 320px;
   background-color: lightblue;
   box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
 }
@@ -499,7 +512,7 @@ footer nav a:hover {
 
 .formulario__input:focus {
 	border: 3px solid #0075FF;
-	outline: none;conta
+	outline: none;
 	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
 }
 
