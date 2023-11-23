@@ -1,6 +1,6 @@
 let contenido = document.querySelector('#contenido')
 function traerMultiples() {
-    fetch('https://randomuser.me/api/?results=8')
+    fetch('https://randomuser.me/api/?results=6')
         .then(res => res.json())
         .then(res => {
             console.log(res)
