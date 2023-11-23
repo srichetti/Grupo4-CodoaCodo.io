@@ -1,6 +1,6 @@
 let contenido = document.querySelector('#contenido')
 function traerMultiples() {
-    fetch('https://randomuser.me/api/?results=5')
+    fetch('https://randomuser.me/api/?results=8')
         .then(res => res.json())
         .then(res => {
             console.log(res)
@@ -9,10 +9,10 @@ function traerMultiples() {
             for (let i = 0; i < res.results.length; i++) {
                 contenidoHTML += `
                     <div class="usuario">
-                        <img src="${res.results[i].picture.large}" width="110px" class="img-fluid rounded-circle">
+                        <img src="${res.results[i].picture.large}" width="100px" class="img-fluid rounded-circle">
                         <h4> ${res.results[i].name.first} ${res.results[i].name.last}</h4>
                         <h6> ${res.results[i].location.country}</h6>
-                        <a href="${res.results[i].email}" target="_blank">${res.results[i].email}</a></p>
+                        <a1 href="${res.results[i].email}" target="_blank">${res.results[i].email}</a1></p>
                     </div>
                 `
             }
