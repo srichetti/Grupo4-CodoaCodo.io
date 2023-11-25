@@ -199,6 +199,24 @@ a {
     font-size: 24px;
 }
 
+/* Media query para pantallas más pequeñas, por ejemplo, dispositivos móviles */
+@media only screen and (max-width: 600px) {
+  nav {
+      flex-direction: column; /* Cambia la dirección del diseño a columna */
+      align-items: center; /* Centra los elementos en el eje transversal */
+  }
+
+  li {
+      margin: 10px 0; /* Añade espacio entre elementos de la lista en dispositivos móviles */
+      text-align: center; /* Centra el texto en dispositivos móviles */
+  }
+
+  a {
+      font-size: 18px; /* Reduz la fuente en dispositivos móviles */
+  }
+}
+
+
 a1 {
   text-decoration: none;
   color: black;
@@ -206,28 +224,6 @@ a1 {
   font-size: 16px;
 }
 
-/* Estilos para dispositivos móviles */
-/* .menu-button {
-  display: none; 
-  /* Oculta el botón de menú en pantallas más grandes */
-/* } */ */
-
-/* Media query para pantallas más pequeñas, por ejemplo, dispositivos móviles */
-@media only screen and (max-width: 600px) {
-  .menu-button {
-      display: block; /* Muestra el botón de menú en pantallas más pequeñas */
-  }
-
-  ul {
-      display: none; /* Oculta la lista en pantallas más pequeñas */
-      text-align: left;
-  }
-
-  li {
-      display: block;
-      margin-bottom: 10px;
-  }
-}
 
 /* Estilos para encabezados */
 h1, h2, h3, h4, h5 {
