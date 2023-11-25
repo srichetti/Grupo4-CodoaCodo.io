@@ -189,14 +189,14 @@ ul {
 }
 
 li {
-    margin: 0 15px; /* Espacio entre elementos de la lista */
+    margin: 0 25px; /* Espacio entre elementos de la lista */
 }
 
 a {
     text-decoration: none;
     color: black;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 /* Media query para pantallas más pequeñas, por ejemplo, dispositivos móviles */
@@ -207,12 +207,12 @@ a {
   }
 
   li {
-      margin: 10px 0; /* Añade espacio entre elementos de la lista en dispositivos móviles */
+      margin: 12px 0; /* Añade espacio entre elementos de la lista en dispositivos móviles */
       text-align: center; /* Centra el texto en dispositivos móviles */
   }
 
   a {
-      font-size: 18px; /* Reduz la fuente en dispositivos móviles */
+      font-size: 12px; /* Reduz la fuente en dispositivos móviles */
   }
 }
 
