@@ -200,7 +200,7 @@ a {
 }
 
 /* Media query para pantallas más pequeñas, por ejemplo, dispositivos móviles */
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 300px) {
   nav {
       flex-direction: column; /* Cambia la dirección del diseño a columna */
       align-items: center; /* Centra los elementos en el eje transversal */
