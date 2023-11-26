@@ -207,7 +207,7 @@ a {
   }
 
   li {
-      margin: 8cqmin; /* Añade espacio entre elementos de la lista en dispositivos móviles */
+      margin: 8px 0; /* Añade espacio entre elementos de la lista en dispositivos móviles */
       text-align: center; /* Centra el texto en dispositivos móviles */
   }
 
