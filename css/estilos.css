@@ -82,40 +82,58 @@ header {
   }
 }
 
-#section-7 .contenedorAncho {
+.contenedorAncho {
   position: absolute;
 }
 
+body {
+  margin: 0;
+}
+
 #section-7 {
+  position: relative;
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* Animacion 2 - cuadro Avion */
 .contParrafoSec7 {
   overflow: hidden;
-  width: 800px;
+  width: 100%;
+  /* Set the width to 100% to cover the entire screen */
+  box-sizing: border-box;
   padding: 20px;
+  /* Adjust padding as needed */
   background-color: rgba(194, 245, 220, 0.8);
-  margin-left: calc(45% - 200px);
+  text-align: center;
+  /* Center the content */
 }
 
 .contParrafoSec7 h6 {
+  font-family: "LibreFranklin";
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 1.2;
   animation: slideFromRight 1s;
   animation-fill-mode: forwards;
 }
 
-@keyframes slideFromRight {
-  from {
-    transform: translateX(100%);
-  }
-
-  to {
-    transform: translateX(calc(80% - 630px));
+/* Media query for smaller screens, adjust as needed */
+@media only screen and (max-width: 600px) {
+  .contParrafoSec7 h6 {
+    font-size: 16px;
   }
 }
+
+
+
 
 /* FIN - Animacion 2 - cuadro Avion */
 
@@ -290,7 +308,8 @@ h5 {
 h6 {
   font-family: "LibreFranklin";
   font-weight: 300;
-  font-size: 36px;
+  text-align: left;
+  font-size: 25px;
   line-height: 1.2;
 }
 
