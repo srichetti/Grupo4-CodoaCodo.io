@@ -207,12 +207,12 @@ a {
   }
 
   li {
-      margin: 12px 0; /* Añade espacio entre elementos de la lista en dispositivos móviles */
+      margin: 8cqmin; /* Añade espacio entre elementos de la lista en dispositivos móviles */
       text-align: center; /* Centra el texto en dispositivos móviles */
   }
 
   a {
-      font-size: 12px; /* Reduz la fuente en dispositivos móviles */
+      font-size: 10px; /* Reduz la fuente en dispositivos móviles */
   }
 }
 
